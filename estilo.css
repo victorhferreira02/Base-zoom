@@ -1,0 +1,139 @@
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                'cabecalho cabecalho' 
+                'texto1 img1'
+                'img2 texto2'
+            ;
+            row-gap: 20px;
+            column-gap: 20px;
+            
+        }
+        
+        header{
+            grid-area: cabecalho;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            
+        }
+        nav{
+            flex-grow: 1;
+            list-style: none;
+        }
+        footer{ 
+            background-color: #f2f2f2;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+       
+            
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;  
+        }
+
+        ul a:link, a:visited {
+           padding: 15px;
+           text-decoration: none;
+           color: #484848;
+           font-size: 1.2rem;
+            
+        }
+        
+        ul a:hover{
+            color: #0b5cff;
+        }
+
+        .botao{
+            text-decoration: none;
+            color:#0b5cff ;
+            border: 2px solid #0b5cff ;
+            border-radius: 25px;
+            padding: 5px 30px;
+            align-self: flex-start;
+        }
+         .botao:hover{
+            background-color: #d7e4ff;
+        }
+        .botao.destaque{
+            background-color: #0b5cff;
+            color: white;
+        }
+        .botao.destaque:hover{
+            background-color: #4780f3;
+        }
+        
+        section#texto1{
+            grid-area: texto1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: start ; usei align-selft no botao */
+            
+        }
+        section#img1{
+            grid-area: img1;
+            
+        }
+        section#img2{
+            grid-area: img2;
+        }
+        section#texto2{
+            grid-area: texto2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+    section img {
+    max-width: 100%;    
+}
+@media (max-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            'cabecalho'
+            'texto1'
+            'img1'
+            'img2'
+            'texto2'
+        
+        ;
+        padding: 10px;
+        header{
+            display: flex;
+            flex-direction: column;
+           padding-top: 20px;
+        }
+
+    } }
+
+
+
+
+/*TIPOGRAFIA*/
+    body{
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }      
+    h1{
+        font-size: 2.5rem;
+        
+    }
+    h2{ font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    span{
+        color: #0b5cff;
+      }
