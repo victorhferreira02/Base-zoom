@@ -17,8 +17,8 @@ Esse projeto foi desenvolvido com o objetivo de **praticar HTML e CSS**, focando
 ---
 
 ## Funcionalidades
-- Layout totalmente responsivo
 - Componentes organizados usando Flexbox e Grid
 - Estrutura limpa e sem frameworks externos
+- Layout adaptável a diferentes tamanhos de telas
 
 ---
