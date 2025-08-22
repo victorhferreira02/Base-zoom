@@ -40,4 +40,4 @@ Durante o desenvolvimento deste projeto, consegui praticar e consolidar:
 ## Como usar
 1. Clone este repositório:
 ```bash
-git clone https://github.com/usuario/meu-projeto.git
+git clone https://github.com/victorhferreira02/Base-zoom.git
